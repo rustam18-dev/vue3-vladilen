@@ -12,7 +12,10 @@
     </div>
 
     <button class="btn primary" type="submit">Войти</button>
-    <button class="btn warning">Забыл пароль?</button>
+    <router-link to="/forget">
+      <button class="btn warning">Забыл пароль?</button>
+    </router-link>
+    <router-link to="/forget">Забыл пароль?</router-link>
   </form>
 </template>
 
@@ -32,7 +35,7 @@ export default {
   methods: {
     submit() {
       if (this.isValid) {
-        // login
+        this.$router.push('/dashboard')
       }
     }
   }

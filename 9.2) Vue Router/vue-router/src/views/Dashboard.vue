@@ -1,4 +1,5 @@
 <template>
+  <the-navbar></the-navbar>
   <div class="card">
     <h1>Привет на главной</h1>
 
@@ -9,7 +10,10 @@
 </template>
 
 <script>
+import TheNavbar from "@/components/TheNavbar";
 export default {
+  components: {TheNavbar}
+
 }
 </script>
 
